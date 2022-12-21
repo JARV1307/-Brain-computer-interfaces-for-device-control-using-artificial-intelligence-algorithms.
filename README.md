@@ -11,6 +11,7 @@ For the data adquisition we are using the Ultracortex MK IV from OpenBCI and als
 
 For the experiment we set 4 stimuli frecuencies: 6.6 Hz, 7.5Hz, 8.57Hz and 10Hz with a white square. Those stimulies are presented on a screen with a refresh rate of 60Hz, and they appear pseudorandomly at intervals of 3.5 seconds for each stimuli.
 
+![image](https://user-images.githubusercontent.com/59260995/209015875-72eccc05-3e44-48af-9516-8ac86af9b075.png)
 
 
 
