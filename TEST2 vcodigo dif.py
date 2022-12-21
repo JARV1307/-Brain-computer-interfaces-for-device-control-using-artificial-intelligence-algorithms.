@@ -13,6 +13,8 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 import random
 
+
+#THIS IMPORT IS FOR SETTING THIS EXECUTION AS A PRIORITY FOR THE OS
 import psutil, platform
 p = psutil.Process(os.getpid())
 
@@ -20,6 +22,8 @@ if platform.system() == 'Darwin' or platform.system() == 'Linux':
     p.nice(20)
 else:
     p.nice(psutil.HIGH_PRIORITY_CLASS)
+
+    
 
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
