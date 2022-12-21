@@ -5,3 +5,4 @@ this project aims to design and implement a brain-computer interface with steady
 
 For now, Python has been used for the development of both the experiment and the data processing. We are also looking to implement the system in real time ensuring high accuracy with low computational cost.
 
+The interface of the experiment was made using PSYCHOPY: https://www.psychopy.org/
