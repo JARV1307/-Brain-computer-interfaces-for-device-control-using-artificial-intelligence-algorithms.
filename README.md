@@ -15,3 +15,5 @@ For the experiment we set 4 stimuli frecuencies: 6.6 Hz, 7.5Hz, 8.57Hz and 10Hz 
 
 
 '''We are currently trying to synchronize the visual stimuli with the acquisition of the data to be able to label them correctly.'''
+
+One solution - preload a list with the sequence that the experiment will follow and then add the events manually in the python script for data processing with the MNE library.
