@@ -13,8 +13,6 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 import random
 
-
-#THIS IMPORT IS FOR SETTING THIS EXECUTION AS A PRIORITY FOR THE OS
 import psutil, platform
 p = psutil.Process(os.getpid())
 
@@ -22,8 +20,6 @@ if platform.system() == 'Darwin' or platform.system() == 'Linux':
     p.nice(20)
 else:
     p.nice(psutil.HIGH_PRIORITY_CLASS)
-
-    
 
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
@@ -81,21 +77,21 @@ defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
 # --- Initialize components for Routine "Bienvenida" ---
 mensajeBienvenida = visual.TextStim(win=win, name='mensajeBienvenida',
-    text='Bienvendo participante',
+    text='Bienvenido, participante',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 mensajeExplicacion = visual.TextStim(win=win, name='mensajeExplicacion',
-    text='El siguiente experimento se presentaran 4 figuras, colocadas en los extremos de la pantalla, las cuales parpadearan a diferentes frecuencias.\n\nEl experimento durará alrededor de 10 minutos, por lo que busque adoptar una posición comoda y cualquier inconveniente comuniquelo al investigador\n',
+    text='En el siguiente experimento se presentarán 4 figuras, colocadas en los extremos de la pantalla, las cuales parpadearán a diferentes frecuencias.\n\nEl experimento durará alrededor de 10 minutos, por lo que busque adoptar una posición cómoda. Cualquier inconveniente comuníquelo al investigador\n',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
 text_4 = visual.TextStim(win=win, name='text_4',
-    text='Por favor mantenga la concentración durante toda la sesión, evite hacer movimientos bruscos y permanezca en una postura relajada',
+    text='Por favor, mantenga la concentración durante toda la sesión, evite hacer movimientos bruscos y permanezca en una postura relajada',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -172,7 +168,7 @@ BLANCO_4 = visual.ImageStim(
 
 # --- Initialize components for Routine "Final" ---
 mensajeSalida = visual.TextStim(win=win, name='mensajeSalida',
-    text='La sesión ha finalizado\n\nPor favor permanezca quieto hasta que el investigador entre a la sala',
+    text='La sesión ha finalizado\n\nPor favor, permanezca quieto hasta que el investigador entre a la sala',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -498,7 +494,7 @@ def baseline():
             #thisExp.timestampOnFlip(win, 'baseline_Image.started')
             baseline_Image.setAutoDraw(True)
         if baseline_Image.status == STARTED:
-            if frameN >= 210:
+            if frameN >= 240:
                 # keep track of stop time/frame for later
                 baseline_Image.tStop = t  # not accounting for scr refresh
                 baseline_Image.frameNStop = frameN  # exact frame index
@@ -549,7 +545,7 @@ def freq6_6():
     frameN = -1
     
     # --- Run Routine "routine_6_6HZ" ---
-    while continueRoutine and routineTimer.getTime() < 3.5:
+    while continueRoutine and routineTimer.getTime() < 4:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -569,7 +565,7 @@ def freq6_6():
             BLANCO.setAutoDraw(True)
         if BLANCO.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > BLANCO.tStartRefresh + 3.5-frameTolerance:
+            if tThisFlipGlobal > BLANCO.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 BLANCO.tStop = t  # not accounting for scr refresh
                 BLANCO.frameNStop = frameN  # exact frame index
@@ -600,7 +596,7 @@ def freq6_6():
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-3.500000)
+        routineTimer.addTime(-4.00000)
 
 
 def freq7_5():
@@ -623,7 +619,7 @@ def freq7_5():
     frameN = -1
     
     # --- Run Routine "routine_7_5HZ" ---
-    while continueRoutine and routineTimer.getTime() < 3.5:
+    while continueRoutine and routineTimer.getTime() < 4:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -643,7 +639,7 @@ def freq7_5():
             BLANCO_2.setAutoDraw(True)
         if BLANCO_2.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > BLANCO_2.tStartRefresh + 3.5-frameTolerance:
+            if tThisFlipGlobal > BLANCO_2.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 BLANCO_2.tStop = t  # not accounting for scr refresh
                 BLANCO_2.frameNStop = frameN  # exact frame index
@@ -675,7 +671,7 @@ def freq7_5():
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-3.500000)
+        routineTimer.addTime(-4.00000)
 
 
 
@@ -700,7 +696,7 @@ def freq8_57():
     frameN = -1
     
     # --- Run Routine "routine_8_57HZ" ---
-    while continueRoutine and routineTimer.getTime() < 3.5:
+    while continueRoutine and routineTimer.getTime() < 4:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -720,7 +716,7 @@ def freq8_57():
             BLANCO_3.setAutoDraw(True)
         if BLANCO_3.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > BLANCO_3.tStartRefresh + 3.5-frameTolerance:
+            if tThisFlipGlobal > BLANCO_3.tStartRefresh + 4-frameTolerance:
                 # keep track of stop time/frame for later
                 BLANCO_3.tStop = t  # not accounting for scr refresh
                 BLANCO_3.frameNStop = frameN  # exact frame index
@@ -751,7 +747,7 @@ def freq8_57():
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-3.500000)
+        routineTimer.addTime(-4.00000)
 
 
 
@@ -776,7 +772,7 @@ def freq10():
     frameN = -1
     
     # --- Run Routine "routine_10HZ" ---
-    while continueRoutine and routineTimer.getTime() < 3.5:
+    while continueRoutine and routineTimer.getTime() < 4:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -796,7 +792,7 @@ def freq10():
             BLANCO_4.setAutoDraw(True)
         if BLANCO_4.status == STARTED:
             # is it time to stop? (based on local clock)
-            if tThisFlip > 3.5-frameTolerance:
+            if tThisFlip > 4-frameTolerance:
                 # keep track of stop time/frame for later
                 BLANCO_4.tStop = t  # not accounting for scr refresh
                 BLANCO_4.frameNStop = frameN  # exact frame index
@@ -827,22 +823,42 @@ def freq10():
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-3.500000)
+        routineTimer.addTime(-4.00000)
 
 
 stimuli_list = [freq6_6,freq7_5,freq8_57,freq10]
 
-cnt=0
-while (cnt<20): #para que se repitan 20 veces cada uno de los estimulos visuales
+stimuli_sequence = [baseline]
+for j in range(0,20):
+  for i in range(0,4):
+    stimuli_sequence.append(stimuli_list[i])
+
+  stimuli_sequence.append(baseline)
+  random.shuffle(stimuli_list)
+
+
+for stim in stimuli_sequence:
+    stim()
+
+for i in range(len(stimuli_sequence)):
+    if stimuli_sequence[i]==freq6_6:
+        stimuli_sequence[i]=1
     
-    baseline()
+    if stimuli_sequence[i]==freq7_5:
+        stimuli_sequence[i]=2
     
-    for i in range(0,4):
-        stimuli_list[i]()
+    if stimuli_sequence[i]==freq8_57:
+        stimuli_sequence[i]=3
     
-    random.shuffle(stimuli_list)
+    if stimuli_sequence[i]==freq10:
+        stimuli_sequence[i]=4
     
-    cnt+=1
+    if stimuli_sequence[i]==baseline:
+        stimuli_sequence[i]=5
+
+print(stimuli_sequence)
+print(len(stimuli_sequence))
+
 
 # --- Prepare to start Routine "Final" ---
 continueRoutine = True
@@ -957,4 +973,6 @@ if eyetracker:
     eyetracker.setConnectionState(False)
 #thisExp.abort()  # or data files will save again on exit
 win.close()
+
+
 core.quit()
