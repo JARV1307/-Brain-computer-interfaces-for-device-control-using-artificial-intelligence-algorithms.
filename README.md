@@ -22,3 +22,6 @@ For the experiment we set 4 stimuli frecuencies: 6.6 Hz, 7.5Hz, 8.57Hz and 10Hz 
 
 One solution - preload a list with the sequence that the experiment will follow and then add the events manually in the python script for data processing with the MNE library. Knowing that every single one of the events have a duration of 4 seconds
 
+
+
+So far, using 18 features, some classification results have been achieved of between 80 to 70 % accuracy. But mostly we have encountered a classification percentage between 40 to 60%.
