@@ -30,5 +30,13 @@ So far, using 18 features, some classification results have been achieved of bet
 
 # Experimentation design:
 
+Materials:
+| Materials | Description |
+| --- | --- |
+| cyton board | From OpenBCI |
+| PC | with graphics card at least RTX-3050 |
+| Screen | with a stable refresh rate of 60 Hz  |
+
 The user must first undergo a routine checkup to determine that he/she does not have any medical condition, must not have a history of epilepsy, his/her blood pressure is measured, his/her sex and age are noted, and the experiment is mainly carried out with people who have good eyesight and are able to maintain concentration.
 
+the experimentation area must be divided in two: one where the data acquisition system is, in our case the PC with the OpenBCI software, and the other area where the only electronic devices present must be the screen where the visual stimuli will be displayed and the other device is the OpenBCI Cyton board, which is where the brainwave sensor is mounted.
