@@ -24,4 +24,11 @@ One solution - preload a list with the sequence that the experiment will follow 
 
 
 
+
 So far, using 18 features, some classification results have been achieved of between 80 to 70 % accuracy. But mostly we have encountered a classification percentage between 40 to 60%.
+
+
+# Experimentation design:
+
+The user must first undergo a routine checkup to determine that he/she does not have any medical condition, must not have a history of epilepsy, his/her blood pressure is measured, his/her sex and age are noted, and the experiment is mainly carried out with people who have good eyesight and are able to maintain concentration.
+
